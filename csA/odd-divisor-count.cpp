@@ -5,17 +5,10 @@
 using namespace std;
 
 int main() {
-    int a, b, c, sum = 0;
+    int a, b;
     fastcin;
     cin >> a >> b;
     
-    for (; a < b ; a++) {
-        c = sqrt(a);
-        
-        if (c * c == a)
-            sum++;
-    }
-    
-    cout << sum << "\n";
+    cout << (int)sqrt(b) - (int)sqrt(a-1) << "\n";
     return 0;
 }
